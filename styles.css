@@ -191,6 +191,15 @@ body {
     margin-bottom: 4rem;
 }
 
+.profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 2rem auto;
+}
+
 .about h1 {
     font-family: var(--font-heading);
     font-size: 2.75rem;
