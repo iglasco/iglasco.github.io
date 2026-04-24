@@ -31,6 +31,15 @@ h1, h2, h3, h4 {
     font-weight: 600;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+img,
+iframe {
+    max-width: 100%;
+}
+
 /* Splash page */
 
 .splash {
@@ -609,12 +618,9 @@ fill: var(--color-accent); /* gold */
 }
 
 .resume-image {
-    display: block;
     width: 100%;
     max-width: 1000px;
     height: auto;
-    border: 1px solid rgba(43, 18, 36, 0.15);
-    margin: 0 auto;
 }
 
 .cert-year {
@@ -852,4 +858,37 @@ fill: var(--color-accent);
 text-transform: uppercase;
 letter-spacing: 0.08em;
 font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+    .page,
+    .page-content {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .site-nav {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .card-grid,
+    .projects .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-panel {
+        padding: 2rem;
+    }
+
+    .resume-image-wrap {
+        gap: 1.5rem;
+    }
 }
