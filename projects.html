@@ -3,20 +3,54 @@
 <head>
     <meta charset="UTF-8" />
     <title>My Projects</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="site-header">
-      <nav class="site-nav" aria-label="Primary">
-        <a class="site-name" href="about.html">Imani Glasco</a>
+      <nav class="site-nav">
+        <a href="about.html" class="site-name">Imani Glasco</a>
+
         <ul class="nav-links">
           <li><a href="about.html">About</a></li>
-          <li><a href="projects.html" aria-current="page">Projects</a></li>
+
+          <li class="dropdown current-section">
+            <a href="projects.html" aria-current="page">Portfolio</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-sub">
+                <a href="fdom.html">Digital and Online Media</a>
+                <ul class="dropdown-submenu">
+                  <li><a href="https://cqt3xf.csb.app/" target="_blank" rel="noopener">HTML Assignment</a></li>
+                  <li><a href="https://playingdndwithjesse.wordpress.com/" target="_blank" rel="noopener">WordPress Project</a></li>
+                  <li><a href="https://www.figma.com/proto/mgsJdXx45Pw0bSkqAxG0VA/InFlow-app-assignment?node-id=1-3&p=f&t=4FqDf5ohMcGkhnTO-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3" target="_blank" rel="noopener">Inflow App Prototype</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown-sub">
+                <a href="social-media.html">Social Media Analytics</a>
+                <ul class="dropdown-submenu">
+                  <li><a href="sm-analytics.html">Analytics Report</a></li>
+                  <li><a href="sm-content.html">Group Content</a></li>
+                  <li><a href="sm-show.html">Social Media Show</a></li>
+                  <li><a href="sm-discussion.html">Discussion Posts</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown-sub">
+                <a href="media-design.html">Media Design</a>
+                <ul class="dropdown-submenu">
+                  <li><a href="images/GlascoP3Magazine.pdf" target="_blank" rel="noopener">Magazine Prototype</a></li>
+                  <li><a href="images/GlascoP2Newsletter.pdf" target="_blank" rel="noopener">Miscellaneous Rentals Newsletter</a></li>
+                  <li><a href="images/Typography project.pdf" target="_blank" rel="noopener">Typography and Grid Work</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="resume.html">Resume</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -27,69 +61,26 @@
         <header class="page-header offset">
             <h1>Projects</h1>
           </header>
+          <section class="content-section">
+            <h2>School Work</h2>
+             <div class="card-grid">
+              <a href="fdom.html" class="class-card project-item-card">
+                <h3>Digital and Online Media</h3>
+                <p>Foundational digital media projects focused on storytelling, structure, and production.</p>
+               </a>
 
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-meta">
-              <p class="project-type">HTML</p>
+              <a href="social-media.html" class="class-card project-item-card"> 
+                <h3>Social Media Analytics</h3>
+                <p>Coursework in content strategy, analytics, campaign planning, and platform-based communication.</p>
+              </a>
+
+              <a href="media-design.html" class="class-card project-item-card">
+                <h3>Media Design</h3>
+                <p>Editorial design, layout systems, typography, and visual storytelling projects.</p>
+              </a>
             </div>
-            <h2 class="project-title">HTML Assignment</h2>
-                <p class="project-desc">
-                    A hand-coded HTML and CSS project focused on semantic structure, layout fundamentals, and clean, readable markup. Built without frameworks to demonstrate a solid understanding of core web standards.
-                  </p>
-            <!--<ul class="project-tags">
-              <li>Semantic HTML</li>
-              <li>CSS</li>
-              <li>Responsive basics</li>
-            </ul>
-            -->
-            <div class="project-actions">
-              <a class="project-link" href="https://cqt3xf.csb.app/" target="_blank" rel="noopener">View</a>
-              <a class="project-link" href="#" target="_blank" rel="noopener">Code</a>
-            </div>
-          </article>
-  
-          <article class="project-card">
-            <div class="project-meta">
-              <p class="project-type">WordPress</p>
-            </div>
-            <h2 class="project-title">WordPress Site</h2>
-            <p class="project-desc">
-                A WordPress site created to meet specific project requirements, with an emphasis on visual storytelling and cohesive media presentation. The work combined written content, original photography, and a self-produced YouTube video into a unified narrative experience.
-            </p>
-            <!--
-            <ul class="project-tags">
-              <li>Information architecture</li>
-              <li>Content</li>
-              <li>Media</li>
-            </ul>
-            -->
-            
-            <div class="project-actions">
-              <a class="project-link" href="https://playingdndwithjesse.wordpress.com/" target="_blank" rel="noopener">View</a>
-            </div>
-          </article>
-  
-          <article class="project-card">
-            <div class="project-meta">
-              <p class="project-type">Figma</p>
-            </div>
-            <h2 class="project-title">App Prototype</h2>
-            <p class="project-desc">
-                An interactive Figma prototype exploring user flow, visual hierarchy, and component-based design. The project focused on translating an idea into a functional interface rather than a static layout.
-            </p>
-        <!-- 
-            ul class="project-tags">
-              <li>UI design</li>
-              <li>Components</li>
-              <li>Prototype</li>
-            </ul> 
-        -->
-            <div class="project-actions">
-              <a class="project-link" href="https://www.figma.com/proto/mgsJdXx45Pw0bSkqAxG0VA/InFlow-app-assignment?node-id=1-3&starting-point-node-id=1%3A3&t=xJwPbnS3oYbOjnmR-1" target="_blank" rel="noopener">View</a>
-            </div>
-          </article>
-        </div>
+          </section>
+
       </section>
     </main>
   
